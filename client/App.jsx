@@ -1,10 +1,13 @@
 import React from 'react'
+import StudentInput from './components/StudentInput';
 
 
 const App = () => {
 
     return (
-        <div>App</div>
+        <div>
+          <StudentInput />
+        </div>
     )
 }
 
