@@ -34,6 +34,11 @@ module.exports = {
         // use: ['file-loader'],
         type: 'asset/resource',
       },
+      {
+        test: /\.ts?$/,
+        use: 'ts-loader',
+        exclude: /node_modules/,
+      },
     ],
   },
   plugins: [
