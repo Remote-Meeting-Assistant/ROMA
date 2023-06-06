@@ -1,10 +1,10 @@
-import React from 'react'
+import React, { FormEvent } from 'react'
 
-const StudentInput = () => {
+const StudentInput: React.FC = () => {
   // On form submit, send POST request to /student
-  const handleSubmit = (event) => {
+  const handleSubmit = (event: FormEvent<HTMLFormElement>): void => {
     event.preventDefault();
-    const data = new FormData(event.target);
+    const data = new FormData(event.currentTarget);
     fetch('/student', {
       method: 'POST',
       body: data,

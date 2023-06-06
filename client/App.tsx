@@ -2,7 +2,7 @@ import React from 'react'
 import StudentInput from './components/StudentInput';
 
 
-const App = () => {
+const App: React.FC = () => {
 
     return (
         <div>
