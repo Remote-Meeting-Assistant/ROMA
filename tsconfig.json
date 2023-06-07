@@ -1,13 +1,16 @@
 {
-  "include": ["client/**/*", "server/**/*"],
-  "compilerOptions": {
-    "target": "ES6",
-    "module": "commonjs",
-    "jsx": "react",
-    "noImplicitAny": true,
-    "removeComments": true,
-    "preserveConstEnums": true,
-    "sourceMap": true,
-    "esModuleInterop": true
-  }
+    "include": ["client/**/*", "server/**/*"],
+    "compilerOptions": {
+      "outDir": "./dist/",
+      "noImplicitAny": true,
+      "module": "commonjs",
+      "target": "ES2016",
+      "jsx": "react-jsx",
+      "allowJs": true,
+      "allowSyntheticDefaultImports": true,
+      "moduleResolution": "Node",
+      "esModuleInterop": true,
+      "skipLibCheck": true,
+      "forceConsistentCasingInFileNames": true
+     }
 }

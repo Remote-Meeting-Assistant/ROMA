@@ -12,7 +12,7 @@ const StudentInput: React.FC = () => {
   }
 
   return (
-    <div>
+    <div id='studentInput'>
       Enter new student:
       <form onSubmit={handleSubmit}>
         <label>

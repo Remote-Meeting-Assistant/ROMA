@@ -1,4 +1,4 @@
-import {describe, expect, test} from '@jest/globals';
+import { describe, expect, test } from '@jest/globals';
 import { studentController } from '../controllers/StudentController';
 import { Request, Response, NextFunction } from 'express';
 import studentDB from '../utils/pool';
@@ -48,10 +48,11 @@ describe('studentController', () => {
     const req: Request = {} as Request;
     const res: Response = {} as Response;
     const next: NextFunction = jest.fn();
+    console.log(next);
     
 
     // Mock the query method of studentDB with a resolved promise
-    studentDB.query = jest.fn().mockResolvedValue({ rows: ['student1', 'student2'] });
+    // studentDB.query = jest.fn().mockResolvedValue({ rows: ['student1', 'student2'] });
 
     // Call the middleware function
     const result = await studentController.getStudents(req, res, next);
