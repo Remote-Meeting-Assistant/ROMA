@@ -24,4 +24,11 @@ router.delete('/',
   }
 )
 
+router.patch('/',
+  studentController.addClap,
+  (req: Request, res: Response) => {
+    res.status(200).json(res.locals.updatedStudent)
+  }
+)
+
 export default router;
