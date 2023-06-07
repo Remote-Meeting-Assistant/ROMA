@@ -48,7 +48,7 @@ module.exports = {
     new Dotenv()
   ],
   resolve: {
-    extensions: [".js", ".jsx"],
+    extensions: [".ts", ".tsx", ".js", ".jsx" ],
   },
   devServer: {
     // static: {

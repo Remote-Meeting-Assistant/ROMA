@@ -19,6 +19,7 @@ CREATE TABLE public.student (
     "last_name" varchar NOT NULL,
     "classroom_id" int NOT NULL,
     "num_claps" int DEFAULT 0,
+    "been_called" boolean DEFAULT FALSE,
     CONSTRAINT "student_pk" PRIMARY KEY("id")
 );
 

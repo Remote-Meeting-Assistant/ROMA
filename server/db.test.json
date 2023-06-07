@@ -1,0 +1,10 @@
+[
+    {
+        "first_name": "Frank",
+        "last_name": "Sinatra",
+        "classroom_id": 1,
+        "num_claps": 0,
+        "been_called": false
+        
+    }
+]

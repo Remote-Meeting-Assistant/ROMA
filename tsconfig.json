@@ -1,0 +1,13 @@
+{
+  "include": ["client/**/*", "server/**/*"],
+  "compilerOptions": {
+    "target": "ES6",
+    "module": "commonjs",
+    "jsx": "react",
+    "noImplicitAny": true,
+    "removeComments": true,
+    "preserveConstEnums": true,
+    "sourceMap": true,
+    "esModuleInterop": true
+  }
+}
