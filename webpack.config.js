@@ -3,7 +3,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const Dotenv = require('dotenv-webpack');
 
 module.exports = {
-  entry: path.join(__dirname, "client", "index.js"),
+  entry: path.join(__dirname, "client", "index.tsx"),
   output: {
     path: path.resolve(__dirname, '/client/dist'),
     filename: 'bundle.js',
@@ -12,7 +12,7 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.jsx?/,
+        test: /\.(js|jsx)$/,
         exclude: /node_modules/,
         use: {
           loader: 'babel-loader',
@@ -35,7 +35,7 @@ module.exports = {
         type: 'asset/resource',
       },
       {
-        test: /\.ts?$/,
+        test: /\.(ts|tsx)$/, 
         use: 'ts-loader',
         exclude: /node_modules/,
       },
